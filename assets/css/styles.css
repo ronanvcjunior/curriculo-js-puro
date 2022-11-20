@@ -267,3 +267,8 @@ img {
   font-size: 1.2rem;
   margin-right: .25rem;
 }
+
+/*===== PROFILE =====*/
+.profile__description {
+  text-align: center;
+}
