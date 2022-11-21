@@ -120,9 +120,19 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+  left: 0;
+  bottom: 0;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  margin: 0;
+  padding: var(--mb-3);
+  width: 100%;
 }
 
 @media screen and (max-width: 968px) {
+  
   .nav__menu {
     position: fixed;
     bottom: -100%;
@@ -132,7 +142,7 @@ img {
     background-color: var(--body-color);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem 1rem 0 0;
-    z-index: var(--z-fixed);
+    z-index: calc(var(--z-fixed) - 1);
     transition: .3s;
   }
 }
@@ -177,6 +187,7 @@ img {
 /* show menu */
 .show-menu {
   bottom: var(--header-height);
+  
 }
 
 /* active menu link */
@@ -389,3 +400,37 @@ img {
   color: var(--text-color-light);
   margin-bottom: 0.25rem;
 }
+
+/*===== SCROLL TOP =====*/
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .3rem;
+  background-color: var(--container-color-light);
+  border-radius: .4rem;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  visibility: hidden;
+}
+
+.scrolltop__icon {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.show-scroll {
+  bottom: 5rem;
+  visibility: visible;
+}
+
+/*===== MEDIA QUERIES =====*/
+
+
+/* for small devices, menu two columns */
+
+
+/* classes modified for large screen size */
