@@ -134,6 +134,10 @@ body.scale-cv {
   max-width: 595px;
 }
 
+.scale-cv #area-cv {
+  min-height: 1122px;
+}
+
 .scale-cv .section {
   padding: 1.5rem 0 .80rem;
 }
@@ -166,8 +170,7 @@ body.scale-cv {
 }
 
 .scale-cv .home__icon,
-.scale-cv .social__icon,
-.scale-cv .interests__icon {
+.scale-cv .social__icon {
   font-size: 1rem;
 }
 
@@ -203,10 +206,6 @@ body.scale-cv {
 
 .scale-cv .skills__name {
   margin-bottom: var(--mb-1);
-}
-
-.scale-cv .interests__container {
-  column-gap: 2.5rem;
 }
 
 /*===== CLASS CSS =====*/
@@ -343,36 +342,14 @@ body.scale-cv {
   text-align: center;
 }
 
-.home__img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  justify-self: center;
-  margin-bottom: var(--mb-1);
-}
-
 .home__title {
   font-size: var(--h1-font-size);
+  font-size: 3rem;
 }
 
 .home__profession {
   font-size: var(--nomral-font-size);
   margin-bottom: var(--mb-1);
-}
-
-.home__address {
-  gap: 1rem;
-}
-
-.home__information {
-  display: flex;
-  align-items: center;
-  font-size: var(--small-font-size);
-}
-
-.home__icon {
-  font-size: 1.2rem;
-  margin-right: .25rem;
 }
 
 .home__button-movil {
@@ -418,19 +395,22 @@ body.scale-cv {
   text-align: center;
 }
 
-/*===== EDUCATION AND EXPERIENCE =====*/
+/*===== EDUCATION, EXPERIENCE AND PROJECTS =====*/
 .education__content,
-.experience__content {
+.experience__content,
+.projects__content {
   display: flex;
 }
 
 .education__time,
-.experience__time {
+.experience__time,
+.projects__time {
   padding-right: 1rem;
 }
 
 .education__rounder,
-.experience__rounder {
+.experience__rounder,
+.projects__rounder {
   position: relative;
   display: block;
   width: 16px;
@@ -441,7 +421,8 @@ body.scale-cv {
 }
 
 .education__line,
-.experience__line {
+.experience__line,
+.projects__line {
   display: block;
   width: 2px;
   height: 110%;
@@ -450,12 +431,14 @@ body.scale-cv {
 }
 
 .education__data,
-.experience__data {
+.experience__data,
+.projects__data {
   gap: .5rem;
 }
 
 .education__title,
-.experience__title {
+.experience__title,
+.projects__title {
   font-size: var(--h3-font-size);
 }
 
@@ -467,6 +450,16 @@ body.scale-cv {
 
 .education__year {
   font-size: var(--smaller-font-size);
+}
+
+.projects__link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--text-color);
+}
+
+.projects__link:hover {
+  color: var(--title-color);
 }
 
 /*===== SKILLS AND LANGUAGES =====*/
@@ -493,6 +486,10 @@ body.scale-cv {
   margin-right: .75rem;
 }
 
+.skills__data {
+  margin-bottom: var(--mb-1);
+}
+
 /*===== CERTIFICATES =====*/
 .certificate__title {
   font-size: var(--h3-font-size);
@@ -515,24 +512,6 @@ body.scale-cv {
 
 .references__title {
   font-size: var(--h3-font-size);
-}
-
-/*===== INTERESTS =====*/
-.interests__container {
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: var(--mb-2);
-}
-
-.interests__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.interests__icon {
-  font-size: 1.5rem;
-  color: var(--text-color-light);
-  margin-bottom: 0.25rem;
 }
 
 /*===== SCROLL TOP =====*/
@@ -626,11 +605,6 @@ body.scale-cv {
 
   .languages__content {
     grid-template-columns: repeat(3, max-content);
-    column-gap: 3.5rem;
-  }
-
-  .interests__container {
-    grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
 }
