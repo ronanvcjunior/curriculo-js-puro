@@ -10,7 +10,7 @@
   --text-color: #403A3A;
   --text-color-light: #707070;
   --container-color: #FAFAFA;
-  --container-color-light: #F0EFEF;
+  --container-color-alt: #F0EFEF;
   --body-color: #FCFCFC;
 
   /*===== font and typography =====*/
@@ -410,7 +410,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: .3rem;
-  background-color: var(--container-color-light);
+  background-color: var(--container-color-alt);
   border-radius: .4rem;
   z-index: var(--z-tooltip);
   transition: .4s;
@@ -460,7 +460,7 @@ img {
   }
 
   .resume__left {
-    background-color: var(--container-color-light);
+    background-color: var(--container-color-alt);
     padding: 1.5rem;
   }
 
@@ -495,4 +495,28 @@ img {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
+}
+
+/*===== variables dark theme =====*/
+body.dark-theme {
+  --title-color: #F2F2F2;
+  --text-color: #BFBFBF;
+  --container-color: #212121;
+  --container-color-alt: #181616;
+  --body-color: #2B2B2B;
+}
+
+/*===== BUTTON DARK/LIGHT =====*/
+.change-theme {
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--title-color);
 }
