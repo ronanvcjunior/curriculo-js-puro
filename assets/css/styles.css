@@ -48,6 +48,49 @@ html {
   scroll-behavior: smooth;
 }
 
+/*===== variables dark theme =====*/
+body.dark-theme {
+  --title-color: #F2F2F2;
+  --text-color: #BFBFBF;
+  --container-color: #212121;
+  --container-color-alt: #181616;
+  --body-color: #2B2B2B;
+}
+
+/*===== BUTTON DARK/LIGHT =====*/
+.change-theme {
+  position: absolute;
+  right: 0;
+  top: 2.2rem;
+  display: flex;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.change-theme:hover {
+  color: var(--title-color);
+}
+
+/*===== font size variables to scale cv =====*/
+
+
+/*===== GENERATE PDF BUTTON =====*/
+.generate-pdf {
+  display: none;
+  position: absolute;
+  top: 2.2rem;
+  left: 0;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.generate-pdf:hover {
+  color: var(--title-color);
+}
+
+/*===== classes modified to reduce size and print on A4 sheet =====*/
 body {
   margin: 0 0 var(--header-height) 0;
   padding: 0;
@@ -442,6 +485,10 @@ img {
     margin: 3rem 0;
   }
 
+  .generate-pdf {
+    display: initial;
+  }
+
   .bd-container {
     margin-left: auto;
     margin-right: auto;
@@ -495,28 +542,4 @@ img {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
   }
-}
-
-/*===== variables dark theme =====*/
-body.dark-theme {
-  --title-color: #F2F2F2;
-  --text-color: #BFBFBF;
-  --container-color: #212121;
-  --container-color-alt: #181616;
-  --body-color: #2B2B2B;
-}
-
-/*===== BUTTON DARK/LIGHT =====*/
-.change-theme {
-  position: absolute;
-  right: 0;
-  top: 2.2rem;
-  display: flex;
-  color: var(--text-color);
-  font-size: 1.2rem;
-  cursor: pointer;
-}
-
-.change-theme:hover {
-  color: var(--title-color);
 }
