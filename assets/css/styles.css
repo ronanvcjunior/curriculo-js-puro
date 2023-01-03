@@ -139,7 +139,7 @@ body.scale-cv {
 }
 
 .scale-cv .section {
-  padding: 1.5rem 0 .80rem;
+  padding: 0.5rem 0;
 }
 
 .scale-cv .section-title {
@@ -202,6 +202,10 @@ body.scale-cv {
 .scale-cv .education__data,
 .scale-cv .experience__data {
   gap: .25rem;
+}
+
+.projects__description {
+  text-align: justify;
 }
 
 .scale-cv .skills__name {
@@ -462,6 +466,10 @@ body.scale-cv {
   color: var(--title-color);
 }
 
+.projects__description {
+  text-align: justify;
+}
+
 /*===== SKILLS AND LANGUAGES =====*/
 .skills__content,
 .languages__content {
@@ -473,7 +481,7 @@ body.scale-cv {
 .languages__name {
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-3);
+  /* margin-bottom: var(--mb-3); */
 }
 
 .skills__circle,
@@ -588,7 +596,7 @@ body.scale-cv {
 
   .section-title,
   .profile__description {
-    text-align: initial;
+    text-align: justify;
   }
 
   .home__container {
