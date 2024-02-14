@@ -109,7 +109,7 @@ let opt = {
   filename:     'Ronan Vieira do Carmo Junior.pdf',
   image:        { type: 'jpeg', quality: 1 },
   html2canvas:  { scale: 4, logging: true },
-  jsPDF:        { format: 'a4', orientation: 'portrait' }
+  jsPDF:        { format: 'b4', orientation: 'portrait' }
 };
 
 

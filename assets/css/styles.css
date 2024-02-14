@@ -131,11 +131,11 @@ body.scale-cv {
 } 
 
 .scale-cv .bd-container {
-  max-width: 595px;
+  max-width: 708.3px;
 }
 
 .scale-cv #area-cv {
-  min-height: 1122px;
+  min-height: 1333.5px;
 }
 
 .scale-cv .section {
@@ -276,7 +276,7 @@ body.scale-cv {
     left: 0;
     width: 100%;
     padding: 2rem 1.5rem;
-    background-color: var(--body-color);
+    background-color: var(--container-color);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     border-radius: 1rem 1rem 0 0;
     z-index: calc(var(--z-fixed) - 1);
@@ -579,7 +579,7 @@ body.scale-cv {
 
   .resume {
     display: grid;
-    grid-template-columns: .5fr 1fr;
+    grid-template-columns: .52fr 1fr;
     background-color: var(--container-color);
     box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
   }
