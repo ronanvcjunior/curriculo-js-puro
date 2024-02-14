@@ -440,6 +440,10 @@ body.scale-cv {
   gap: .5rem;
 }
 
+.experience__description {
+  text-align: justify;
+}
+
 .education__title,
 .experience__title,
 .projects__title {
